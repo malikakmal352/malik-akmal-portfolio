@@ -279,6 +279,36 @@ html {
     }
 }
 
+@media (max-width: 400px) {
+    .hero-image {
+        display: none !important;
+    }
+    
+    .profile-img {
+        display: none !important;
+        visibility: hidden !important;
+    }
+    
+    .hero-container {
+        padding: 25px 3%;
+        gap: 0;
+        justify-content: center;
+    }
+    
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .hero h1 {
+        font-size: 26px;
+    }
+    
+    .hero p {
+        font-size: 0.85rem;
+    }
+}
+
 .about-image {
     width: 200px;
     height: 200px;
