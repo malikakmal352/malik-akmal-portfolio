@@ -33,15 +33,16 @@ html {
 
 /* Navigation */
 .navbar {
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(12px);
+    background-color: rgba(10, 10, 20, 0.75) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     transition: all 0.3s ease;
 }
 
 .navbar-brand {
     font-weight: 700;
     font-size: 1.5rem;
-    color: var(--primary-color) !important;
+    color: #00d4ff !important;
 }
 
 .navbar-nav .nav-link {
@@ -50,24 +51,39 @@ html {
     padding: 8px 16px !important;
     border-radius: 8px;
     transition: all 0.3s ease;
-    color: var(--text-dark) !important;
+    color: #e2e8f0 !important;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-    background-color: var(--bg-light);
-    color: var(--primary-color) !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #00d4ff !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255,255,255,0.3);
+}
+.navbar-toggler-icon {
+    filter: invert(1);
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #1e1e2f, #4a00e0, #8e2de2);
+    background:
+        linear-gradient(
+            to right,
+            rgba(10, 10, 20, 0.88) 0%,
+            rgba(10, 10, 30, 0.75) 50%,
+            rgba(10, 10, 20, 0.55) 100%
+        ),
+        url('images/hero_banners/hero-bg-2.png') center center / cover no-repeat;
     color: #ffffff;
     padding-top: 100px;
-    max-height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     overflow: hidden;
+    position: relative;
 }
 
 .hero-container {
@@ -83,7 +99,7 @@ html {
 
 .hero-content {
     flex: 1;
-    max-width: 500px;
+    max-width: 560px;
 }
 
 .hero-image {
@@ -96,43 +112,51 @@ html {
     color: #ffffff;
     animation: fadeUp 1s ease-in-out;
     margin-bottom: 20px;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+    line-height: 1.15;
 }
 
 .hero h1 span {
     color: #00d4ff;
+    text-shadow: 0 0 30px rgba(0, 212, 255, 0.5);
 }
 
 .hero p {
-    color: #d1d1e0;
+    color: #cbd5e1;
     max-width: 500px;
-    line-height: 1.6;
+    line-height: 1.7;
     font-size: 1rem;
     margin: 20px 0;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.4);
 }
 
 .role {
     display: inline-block;
     background: rgba(0, 212, 255, 0.15);
     color: #00d4ff;
-    padding: 6px 12px;
-    border-radius: 6px;
+    padding: 6px 14px;
+    border-radius: 50px;
     font-weight: 600;
     margin-bottom: 15px;
     font-size: 0.9rem;
+    border: 1px solid rgba(0, 212, 255, 0.35);
+    letter-spacing: 0.5px;
+    backdrop-filter: blur(8px);
 }
 
 .profile-img {
     width: 240px;
     height: 280px;
     object-fit: cover;
-    border-radius: 16px;
-    border: 4px solid rgba(255,255,255,0.2);
-    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    border-radius: 20px;
+    border: 3px solid rgba(0, 212, 255, 0.35);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 40px rgba(0, 212, 255, 0.15);
+    transition: 0.4s ease;
 }
 
 .profile-img:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
+    transform: scale(1.04) translateY(-4px);
+    box-shadow: 0 28px 70px rgba(0,0,0,0.7), 0 0 60px rgba(0, 212, 255, 0.3);
 }
 
 .hero-buttons {
@@ -158,29 +182,36 @@ html {
 
 .btn-primary {
     background: #00d4ff;
-    color: #000;
+    color: #0a0a14;
     padding: 12px 24px;
     border-radius: 8px;
-    font-weight: 600;
+    font-weight: 700;
     border: none;
+    box-shadow: 0 4px 20px rgba(0, 212, 255, 0.35);
 }
 
 .btn-primary:hover {
-    background: #00aacc;
-    color: #000;
+    background: #00b8e0;
+    color: #0a0a14;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 212, 255, 0.5);
 }
 
 .btn-secondary {
-    border: 2px solid #00d4ff;
+    border: 2px solid rgba(0, 212, 255, 0.6);
     color: #00d4ff;
-    padding: 12px 24px;
+    padding: 10px 24px;
     border-radius: 8px;
-    background: transparent;
+    background: rgba(0, 212, 255, 0.08);
+    backdrop-filter: blur(8px);
+    font-weight: 600;
 }
 
 .btn-secondary:hover {
-    background: #00d4ff;
-    color: #000;
+    background: rgba(0, 212, 255, 0.2);
+    color: #ffffff;
+    border-color: #00d4ff;
+    transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
@@ -329,20 +360,21 @@ html {
     justify-content: center;
     width: 44px;
     height: 44px;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
+    background: rgba(255, 255, 255, 0.08);
+    color: #e2e8f0;
     border-radius: 12px;
     text-decoration: none;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .hero .social-link:hover {
     background: rgba(0, 212, 255, 0.2);
     color: #00d4ff;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(0, 212, 255, 0.3);
+    border-color: rgba(0, 212, 255, 0.4);
 }
 
 /* Social Links for other sections */
@@ -452,6 +484,7 @@ footer .social-link:hover {
     height: 100%;
     background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
     border-radius: 4px;
+    width: 0;                          /* JS animates to data-width */
     transition: width 1s ease-out;
 }
 
@@ -807,4 +840,49 @@ footer {
 
 .border-top {
     border-top: 1px solid var(--border-color) !important;
+}
+
+/* ===================== TYPED CURSOR ===================== */
+.hero h1 span::after {
+    content: '|';
+    display: inline-block;
+    color: #00d4ff;
+    animation: blink 0.8s step-end infinite;
+    margin-left: 2px;
+    font-weight: 300;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+}
+
+/* Remove cursor once typing is done (JS adds .typed class) */
+.hero h1 span.typed::after {
+    display: none;
+}
+
+/* ===================== HERO ENTRANCE ANIMATIONS ===================== */
+.hero-content {
+    animation: heroFadeIn 1s ease-out both;
+}
+.hero-image {
+    animation: heroFadeIn 1s ease-out 0.3s both;
+}
+
+@keyframes heroFadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ===================== SCROLL PROGRESS BAR ===================== */
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: linear-gradient(90deg, #00d4ff, #3b82f6);
+    z-index: 9999;
+    transition: width 0.1s linear;
 }

@@ -10,6 +10,8 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Scroll progress indicator -->
+    <div id="scroll-progress"></div>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
         <div class="container">
@@ -57,26 +59,26 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-3 mb-4">
-                    <div class="stat-item">
-                        <h3 class="stat-number">4+</h3>
+                    <div class="stat-item" data-animate="fade-up" data-delay="0">
+                        <h3 class="stat-number" data-count="4" data-suffix="+">0</h3>
                         <p class="stat-label">Years Experience</p>
                     </div>
                 </div>
                 <div class="col-md-3 mb-4">
-                    <div class="stat-item">
-                        <h3 class="stat-number">50+</h3>
+                    <div class="stat-item" data-animate="fade-up" data-delay="150">
+                        <h3 class="stat-number" data-count="50" data-suffix="+">0</h3>
                         <p class="stat-label">Projects Completed</p>
                     </div>
                 </div>
                 <div class="col-md-3 mb-4">
-                    <div class="stat-item">
-                        <h3 class="stat-number">15+</h3>
+                    <div class="stat-item" data-animate="fade-up" data-delay="300">
+                        <h3 class="stat-number" data-count="15" data-suffix="+">0</h3>
                         <p class="stat-label">Technologies</p>
                     </div>
                 </div>
                 <div class="col-md-3 mb-4">
-                    <div class="stat-item">
-                        <h3 class="stat-number">100%</h3>
+                    <div class="stat-item" data-animate="fade-up" data-delay="450">
+                        <h3 class="stat-number" data-count="100" data-suffix="%">0</h3>
                         <p class="stat-label">Client Satisfaction</p>
                     </div>
                 </div>
@@ -89,19 +91,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">About Me</h2>
-                    <p class="section-subtitle">Get to know more about my journey and expertise</p>
+                    <h2 class="section-title" data-animate="fade-up">About Me</h2>
+                    <p class="section-subtitle" data-animate="fade-up" data-delay="100">Get to know more about my journey and expertise</p>
                 </div>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-4 mb-5">
+                <div class="col-lg-4 mb-5" data-animate="fade-left">
                     <div class="text-center">
                         <img src="images/profile.png" alt="Malik Akmal Naseer" class="img-fluid rounded-circle mb-4 about-image">
                         <h4>Malik Akmal Naseer</h4>
                         <p class="text-muted">Senior Backend Developer</p>
                     </div>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-8" data-animate="fade-right" data-delay="150">
                     <div class="about-content">
                         <p class="lead">Backend Developer with 4+ years of experience building scalable web applications and high-performance REST APIs using Django and Django REST Framework. Proven ability to design efficient database architectures, optimize application performance, and deliver production-ready systems.</p>
                         
@@ -138,130 +140,130 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">My Skills & Technologies</h2>
-                    <p class="section-subtitle">Comprehensive overview of my technical expertise</p>
+                    <h2 class="section-title" data-animate="fade-up">My Skills & Technologies</h2>
+                    <p class="section-subtitle" data-animate="fade-up" data-delay="100">Comprehensive overview of my technical expertise</p>
                 </div>
             </div>
             <div class="row">
                 <!-- Backend Development -->
-                <div class="col-lg-6 mb-4">
+                <div class="col-lg-6 mb-4" data-animate="fade-up" data-delay="0">
                     <div class="skill-category">
                         <h4 class="text-primary mb-3"><i class="fas fa-server me-2"></i>Backend Development</h4>
                         <div class="skill-item">
                             <span class="skill-name">Python</span>
                             <div class="skill-progress">
-                                <div class="progress-bar" style="width: 95%"></div>
+                                <div class="progress-bar" data-width="95"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">Django</span>
                             <div class="skill-progress">
-                                <div class="progress-bar" style="width: 95%"></div>
+                                <div class="progress-bar" data-width="95"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">Django REST Framework</span>
                             <div class="skill-progress">
-                                <div class="progress-bar" style="width: 90%"></div>
+                                <div class="progress-bar" data-width="90"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">RESTful API Design</span>
+                            <span class="skill-name">RestFull API Design</span>
                             <div class="skill-progress">
-                                <div class="progress-bar" style="width: 90%"></div>
+                                <div class="progress-bar" data-width="90"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Database -->
-                <div class="col-lg-6 mb-4">
+                <div class="col-lg-6 mb-4" data-animate="fade-up" data-delay="150">
                     <div class="skill-category">
                         <h4 class="text-primary mb-3"><i class="fas fa-database me-2"></i>Database Technologies</h4>
                         <div class="skill-item">
                             <span class="skill-name">PostgreSQL</span>
                             <div class="skill-progress">
-                                <div class="progress-bar" style="width: 90%"></div>
+                                <div class="progress-bar" data-width="90"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">MySQL</span>
                             <div class="skill-progress">
-                                <div class="progress-bar" style="width: 85%"></div>
+                                <div class="progress-bar" data-width="85"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">Database Design</span>
                             <div class="skill-progress">
-                                <div class="progress-bar" style="width: 90%"></div>
+                                <div class="progress-bar" data-width="90"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">Query Optimization</span>
                             <div class="skill-progress">
-                                <div class="progress-bar" style="width: 85%"></div>
+                                <div class="progress-bar" data-width="85"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Cloud & DevOps -->
-                <div class="col-lg-6 mb-4">
+                <div class="col-lg-6 mb-4" data-animate="fade-up" data-delay="300">
                     <div class="skill-category">
                         <h4 class="text-primary mb-3"><i class="fas fa-cloud me-2"></i>Cloud & DevOps</h4>
                         <div class="skill-item">
                             <span class="skill-name">AWS (Lambda, S3, Glue)</span>
                             <div class="skill-progress">
-                                <div class="progress-bar" style="width: 80%"></div>
+                                <div class="progress-bar" data-width="80"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">Docker</span>
                             <div class="skill-progress">
-                                <div class="progress-bar" style="width: 85%"></div>
+                                <div class="progress-bar" data-width="85"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">Redis & Celery</span>
                             <div class="skill-progress">
-                                <div class="progress-bar" style="width: 85%"></div>
+                                <div class="progress-bar" data-width="85"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">Server Management</span>
                             <div class="skill-progress">
-                                <div class="progress-bar" style="width: 80%"></div>
+                                <div class="progress-bar" data-width="80"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Tools & Others -->
-                <div class="col-lg-6 mb-4">
+                <div class="col-lg-6 mb-4" data-animate="fade-up" data-delay="450">
                     <div class="skill-category">
                         <h4 class="text-primary mb-3"><i class="fas fa-tools me-2"></i>Tools & Others</h4>
                         <div class="skill-item">
                             <span class="skill-name">Git & GitHub</span>
                             <div class="skill-progress">
-                                <div class="progress-bar" style="width: 95%"></div>
+                                <div class="progress-bar" data-width="95"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">Third-Party API Integration</span>
                             <div class="skill-progress">
-                                <div class="progress-bar" style="width: 90%"></div>
+                                <div class="progress-bar" data-width="90"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">Performance Optimization</span>
                             <div class="skill-progress">
-                                <div class="progress-bar" style="width: 85%"></div>
+                                <div class="progress-bar" data-width="85"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">System Architecture</span>
                             <div class="skill-progress">
-                                <div class="progress-bar" style="width: 80%"></div>
+                                <div class="progress-bar" data-width="80"></div>
                             </div>
                         </div>
                     </div>
@@ -275,15 +277,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">Work Experience</h2>
-                    <p class="section-subtitle">My professional journey and achievements</p>
+                    <h2 class="section-title" data-animate="fade-up">Work Experience</h2>
+                    <p class="section-subtitle" data-animate="fade-up" data-delay="100">My professional journey and achievements</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
                     <div class="timeline">
                         <!-- Current Position -->
-                        <div class="timeline-item">
+                        <div class="timeline-item" data-animate="fade-right" data-delay="0">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
                                 <h4 class="text-primary">Senior Backend Developer</h4>
@@ -300,7 +302,7 @@
                         </div>
 
                         <!-- Previous Position -->
-                        <div class="timeline-item">
+                        <div class="timeline-item" data-animate="fade-right" data-delay="150">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
                                 <h4 class="text-primary">Junior Backend Developer</h4>
@@ -316,7 +318,7 @@
                         </div>
 
                         <!-- Education -->
-                        <div class="timeline-item">
+                        <div class="timeline-item" data-animate="fade-right" data-delay="300">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
                                 <h4 class="text-primary">Bachelor of Science in Information Technology</h4>
@@ -334,13 +336,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">Featured Projects</h2>
-                    <p class="section-subtitle">Some of my recent work showcasing scalable backend solutions</p>
+                    <h2 class="section-title" data-animate="fade-up">Featured Projects</h2>
+                    <p class="section-subtitle" data-animate="fade-up" data-delay="100">Some of my recent work showcasing scalable backend solutions</p>
                 </div>
             </div>
             <div class="row">
                 <!-- Housing Society Management System -->
-                <div class="col-lg-4 mb-4">
+                <div class="col-lg-4 mb-4" data-animate="fade-up" data-delay="0">
                     <div class="project-card">
                         <img src="images/housing/dashboard.png" alt="Housing Society Management" class="project-image">
                         <div class="project-content">
@@ -360,7 +362,7 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-4 mb-4">
+                <div class="col-lg-4 mb-4" data-animate="fade-up" data-delay="150">
                     <div class="project-card">
                         <img src="images/loomcentric.jpeg" alt="LoomCentric" class="project-image">
                         <div class="project-content">
@@ -379,7 +381,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-4">
+                <div class="col-lg-4 mb-4" data-animate="fade-up" data-delay="300">
                     <div class="project-card">
                         <img src="images/grains_dealer/dashboard.png" alt="Grains Dealer" class="project-image">
                         <div class="project-content">
@@ -392,13 +394,13 @@
                                 <span class="badge bg-success me-1">Inventory</span>
                                 <span class="badge bg-success me-1">Reports</span>
                             </div>
-                            <a href="https://app.echsisb.com/admin" class="btn btn-outline-primary btn-sm" target="_blank">
+                            <a href="#" class="btn btn-outline-primary btn-sm" target="_blank">
                                 <i class="fas fa-external-link-alt me-1"></i>View Project
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-4">
+                <div class="col-lg-4 mb-4" data-animate="fade-up" data-delay="0">
                     <div class="project-card">
                         <img src="images/assignment-stack.jpeg" alt="Assignment Stack" class="project-image">
                         <div class="project-content">
@@ -416,7 +418,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-4">
+                <div class="col-lg-4 mb-4" data-animate="fade-up" data-delay="150">
                     <div class="project-card">
                         <img src="images/copperleaf.png" alt="Copperleaf" class="project-image">
                         <div class="project-content">
@@ -434,7 +436,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-4">
+                <div class="col-lg-4 mb-4" data-animate="fade-up" data-delay="300">
                     <div class="project-card">
                         <img src="images/takecare.jpg" alt="TakeCare" class="project-image">
                         <div class="project-content">
@@ -446,7 +448,7 @@
                                 <span class="badge bg-danger me-1">Healthcare</span>
                                 <span class="badge bg-danger me-1">Booking</span>
                             </div>
-                            <a href="#" class="btn btn-outline-primary btn-sm">
+                            <a href="https://takecaresystem.pythonanywhere.com/" class="btn btn-outline-primary btn-sm">
                                 <i class="fas fa-external-link-alt me-1"></i>View Project
                             </a>
                         </div>
@@ -457,23 +459,23 @@
 
             <!-- Project Statistics -->
             <div class="row mt-5">
-                <div class="col-12">
+                <div class="col-12" data-animate="fade-up">
                     <div class="project-stats bg-white rounded p-4 shadow-sm">
                         <div class="row text-center">
                             <div class="col-md-3 mb-3">
-                                <h3 class="text-primary mb-1">50+</h3>
+                                <h3 class="text-primary mb-1" data-count="50" data-suffix="+">0</h3>
                                 <p class="mb-0 text-muted">Projects Completed</p>
                             </div>
                             <div class="col-md-3 mb-3">
-                                <h3 class="text-primary mb-1">7</h3>
+                                <h3 class="text-primary mb-1" data-count="7" data-suffix="">0</h3>
                                 <p class="mb-0 text-muted">Featured Projects</p>
                             </div>
                             <div class="col-md-3 mb-3">
-                                <h3 class="text-primary mb-1">15+</h3>
+                                <h3 class="text-primary mb-1" data-count="15" data-suffix="+">0</h3>
                                 <p class="mb-0 text-muted">Technologies Used</p>
                             </div>
                             <div class="col-md-3 mb-3">
-                                <h3 class="text-primary mb-1">100%</h3>
+                                <h3 class="text-primary mb-1" data-count="100" data-suffix="%">0</h3>
                                 <p class="mb-0 text-muted">Client Satisfaction</p>
                             </div>
                         </div>
@@ -488,12 +490,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">Get In Touch</h2>
-                    <p class="section-subtitle">Let's discuss your next project or collaboration opportunity</p>
+                    <h2 class="section-title" data-animate="fade-up">Get In Touch</h2>
+                    <p class="section-subtitle" data-animate="fade-up" data-delay="100">Let's discuss your next project or collaboration opportunity</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 mb-5">
+                <div class="col-lg-8 mb-5" data-animate="fade-left">
                     <div class="contact-form">
                         <form id="contactForm">
                             <div class="row">
@@ -537,7 +539,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-animate="fade-right" data-delay="150">
                     <div class="contact-info">
                         <h4 class="text-primary mb-4">Contact Information</h4>
                         <div class="contact-item">
@@ -607,68 +609,191 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+    // ============================================================
+    //  ANIMATION ENGINE
+    // ============================================================
 
-        // Contact form handling
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = {
-                firstName: document.getElementById('firstName').value,
-                lastName: document.getElementById('lastName').value,
-                email: document.getElementById('email').value,
-                phone: document.getElementById('phone').value,
-                subject: document.getElementById('subject').value,
-                message: document.getElementById('message').value
-            };
-            
-            // Simple validation
-            if (!formData.firstName || !formData.lastName || !formData.email || !formData.subject || !formData.message) {
-                alert('Please fill in all required fields.');
-                return;
+    // --- 1. Scroll-reveal (fade-up / fade-left / fade-right) ---
+    const animateEls = document.querySelectorAll('[data-animate]');
+
+    // Set initial hidden state
+    animateEls.forEach(el => {
+        const type = el.getAttribute('data-animate');
+        el.style.opacity = '0';
+        el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+        if (type === 'fade-up')    el.style.transform = 'translateY(50px)';
+        if (type === 'fade-left')  el.style.transform = 'translateX(-50px)';
+        if (type === 'fade-right') el.style.transform = 'translateX(50px)';
+    });
+
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const el    = entry.target;
+                const delay = parseInt(el.getAttribute('data-delay') || 0);
+                setTimeout(() => {
+                    el.style.opacity   = '1';
+                    el.style.transform = 'translate(0, 0)';
+                }, delay);
+                revealObserver.unobserve(el);
             }
-            
-            // Simulate form submission
-            alert('Thank you for your message! I will get back to you within 24 hours.');
-            
-            // Reset form
-            this.reset();
         });
+    }, { threshold: 0.12 });
 
-        // Update active nav link on scroll
-        window.addEventListener('scroll', function() {
-            const sections = document.querySelectorAll('section[id]');
-            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-            
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
+    animateEls.forEach(el => revealObserver.observe(el));
 
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('active');
-                }
-            });
+    // --- 2. Number counter ---
+    const counterEls = document.querySelectorAll('[data-count]');
+
+    function animateCounter(el) {
+        const target = parseInt(el.getAttribute('data-count'));
+        const suffix = el.getAttribute('data-suffix') || '';
+        const duration = 1800;
+        const step = 16;
+        const steps = duration / step;
+        let current = 0;
+
+        const timer = setInterval(() => {
+            current += target / steps;
+            if (current >= target) {
+                current = target;
+                clearInterval(timer);
+            }
+            el.textContent = Math.floor(current) + suffix;
+        }, step);
+    }
+
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounter(entry.target);
+                counterObserver.unobserve(entry.target);
+            }
         });
+    }, { threshold: 0.5 });
+
+    counterEls.forEach(el => {
+        el.textContent = '0';
+        counterObserver.observe(el);
+    });
+
+    // --- 3. Skill progress bars ---
+    const progressBars = document.querySelectorAll('.progress-bar[data-width]');
+
+    // Start at 0
+    progressBars.forEach(bar => { bar.style.width = '0%'; });
+
+    const barObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const bar = entry.target;
+                const w   = bar.getAttribute('data-width');
+                setTimeout(() => {
+                    bar.style.transition = 'width 1.4s cubic-bezier(0.4, 0, 0.2, 1)';
+                    bar.style.width = w + '%';
+                }, 200);
+                barObserver.unobserve(bar);
+            }
+        });
+    }, { threshold: 0.3 });
+
+    progressBars.forEach(bar => barObserver.observe(bar));
+
+    // --- 4. Typed text effect in hero ---
+    const typedEl = document.querySelector('.hero h1 span');
+    if (typedEl) {
+        const fullText = typedEl.textContent;
+        typedEl.textContent = '';
+        let i = 0;
+        const typeTimer = setInterval(() => {
+            typedEl.textContent += fullText[i];
+            i++;
+            if (i >= fullText.length) {
+                clearInterval(typeTimer);
+                typedEl.classList.add('typed'); // remove blinking cursor
+            }
+        }, 60);
+    }
+
+    // --- 5. Navbar scroll effect + scroll progress bar ---
+    const scrollBar = document.getElementById('scroll-progress');
+    window.addEventListener('scroll', () => {
+        // Progress bar
+        const scrollTop    = document.documentElement.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        scrollBar.style.width = (scrollTop / scrollHeight * 100) + '%';
+
+        // Navbar opacity
+        const navbar = document.querySelector('.navbar');
+        if (scrollTop > 50) {
+            navbar.style.background = 'rgba(10, 10, 20, 0.97)';
+            navbar.style.boxShadow  = '0 4px 30px rgba(0,0,0,0.4)';
+        } else {
+            navbar.style.background = 'rgba(10, 10, 20, 0.75)';
+            navbar.style.boxShadow  = 'none';
+        }
+    });
+
+    // --- 6. Active nav link on scroll ---
+    window.addEventListener('scroll', () => {
+        const sections  = document.querySelectorAll('section[id]');
+        const navLinks  = document.querySelectorAll('.navbar-nav .nav-link');
+        let current = '';
+        sections.forEach(section => {
+            if (scrollY >= section.offsetTop - 200) {
+                current = section.getAttribute('id');
+            }
+        });
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+        });
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    });
+
+    // --- 7. Smooth scroll ---
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    });
+
+    // --- 8. Contact form ---
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const f = this;
+        const btn = f.querySelector('button[type="submit"]');
+        const orig = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-check me-2"></i>Message Sent!';
+        btn.style.background = '#10b981';
+        setTimeout(() => {
+            btn.innerHTML = orig;
+            btn.style.background = '';
+            f.reset();
+        }, 3000);
+    });
+
+    // --- 9. Project card tilt on mouse move ---
+    document.querySelectorAll('.project-card').forEach(card => {
+        card.addEventListener('mousemove', e => {
+            const rect = card.getBoundingClientRect();
+            const x = ((e.clientX - rect.left) / rect.width  - 0.5) * 10;
+            const y = ((e.clientY - rect.top)  / rect.height - 0.5) * -10;
+            card.style.transform = `translateY(-8px) rotateX(${y}deg) rotateY(${x}deg)`;
+        });
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = '';
+            card.style.transition = 'transform 0.5s ease';
+        });
+    });
     </script>
 </body>
 </html>
