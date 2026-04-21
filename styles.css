@@ -110,7 +110,6 @@ html {
         url('images/hero_banners/hero-bg-2.png') center center / cover no-repeat;
     color: #ffffff;
     padding-top: 100px;
-    min-height: 100vh;
     display: flex;
     align-items: center;
     overflow: hidden;
