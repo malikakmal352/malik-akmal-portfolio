@@ -916,3 +916,304 @@ footer {
     z-index: 9999;
     transition: width 0.1s linear;
 }
+
+/* ===================== PROJECT DETAIL PAGE STYLES ===================== */
+
+/* Image Slider Container */
+.project-slider-container {
+    background: var(--bg-white);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border: 1px solid var(--border-color);
+}
+
+.main-slider-image {
+    width: 100%;
+    height: 450px;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    position: relative;
+}
+
+.main-slider-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.main-slider-image:hover img {
+    transform: scale(1.02);
+}
+
+/* Thumbnail Navigation */
+.slider-thumbnails {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.slider-nav-btn {
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.slider-nav-btn:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.thumbnails-wrapper {
+    flex: 1;
+    overflow: hidden;
+}
+
+.thumbnails-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 5px 0;
+}
+
+.thumbnails-container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.thumbnails-container::-webkit-scrollbar-track {
+    background: var(--bg-light);
+    border-radius: 3px;
+}
+
+.thumbnails-container::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 3px;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.thumbnail:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.thumbnail.active {
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 12px rgba(124,58,237,0.3);
+}
+
+/* Project Details Card */
+.project-details-card {
+    background: var(--bg-white);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border: 1px solid var(--border-color);
+    position: sticky;
+    top: 100px;
+}
+
+.project-category-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(124,58,237,0.1), rgba(6,182,212,0.1));
+    color: var(--primary-color);
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid rgba(124,58,237,0.2);
+    margin-bottom: 16px;
+}
+
+.project-detail-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.project-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    color: var(--text-mid);
+    font-size: 0.95rem;
+}
+
+.meta-item i {
+    color: var(--primary-color);
+    width: 20px;
+}
+
+.project-description {
+    margin-top: 24px;
+}
+
+.project-description h5 {
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+}
+
+.project-description p {
+    color: var(--text-mid);
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.project-actions .btn {
+    font-weight: 600;
+    padding: 14px 24px;
+}
+
+.project-stats-inline {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.stat-inline-item {
+    text-align: center;
+}
+
+.stat-inline-item h4 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 4px;
+}
+
+.stat-inline-item p {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    margin: 0;
+}
+
+/* Feature List Item */
+.feature-list-item {
+    display: flex;
+    gap: 16px;
+    padding: 20px;
+    background: var(--bg-white);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.feature-list-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(124,58,237,0.1);
+    border-color: rgba(124,58,237,0.2);
+}
+
+.feature-icon-small {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, rgba(124,58,237,0.1), rgba(6,182,212,0.1));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    flex-shrink: 0;
+    border: 1px solid rgba(124,58,237,0.15);
+}
+
+.feature-list-item h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.feature-list-item p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .project-details-card {
+        position: static;
+        margin-top: 30px;
+    }
+    
+    .main-slider-image {
+        height: 350px;
+    }
+    
+    .project-detail-title {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-slider-image {
+        height: 280px;
+    }
+    
+    .thumbnail {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .project-details-card {
+        padding: 24px;
+    }
+    
+    .project-detail-title {
+        font-size: 1.5rem;
+    }
+    
+    .project-stats-inline {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    
+    .stat-inline-item {
+        flex: 1 1 45%;
+    }
+}
