@@ -919,6 +919,49 @@ footer {
 
 /* ===================== PROJECT DETAIL PAGE STYLES ===================== */
 
+/* Back Button */
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: var(--bg-light);
+    color: var(--text-dark);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    transform: translateX(-4px);
+}
+
+/* Tech Pills */
+.tech-pill {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--bg-light);
+    color: var(--text-dark);
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    border: 1px solid var(--border-color);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.tech-pill:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+}
+
 /* Image Slider Container */
 .project-slider-container {
     background: var(--bg-white);
